@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "bindings": [{
+            "name": "myBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "raw/{name}",
+            "connection": "exifdemo_STORAGE"
+        },
+        {
+            "name": "output",
+            "type": "blob",
+            "dataType": "binary",
+            "direction": "out",
+            "path": "cleaned/{name}",
+            "connection": "exifdemo_STORAGE"
+        }
+    ]
+}

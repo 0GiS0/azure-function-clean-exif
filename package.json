@@ -1,0 +1,25 @@
+{
+  "name": "azure-function-clean-exif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0GiS0/azure-function-clean-exif.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0GiS0/azure-function-clean-exif/issues"
+  },
+  "homepage": "https://github.com/0GiS0/azure-function-clean-exif#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "dist-exiftool": "^10.53.0",
+    "fs": "0.0.1-security"
+  }
+}
