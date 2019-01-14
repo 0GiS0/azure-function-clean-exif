@@ -7,12 +7,6 @@
             "metadata": {
                 "description": "The name of the function app that you wish to create."
             }
-        },
-        "storageAccount": {
-            "type": "string",
-            "metadata": {
-                "description": "The storage account where you store your files."
-            }
         }
     },
     "variables": {
@@ -54,7 +48,7 @@
                         },
                         {
                             "name": "exifdemo_STORAGE",
-                            "value": "[parameters('storageAccount')]"
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageName'),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageName')), '2015-05-01-preview').key1)]"
                         }
                     ]
                 },
