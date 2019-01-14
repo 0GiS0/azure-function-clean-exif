@@ -1,4 +1,4 @@
-# Clean metadata with Azure Functions
+# Remove metadata with Azure Functions
 
 It removes file metadata using Azure Functions
 
